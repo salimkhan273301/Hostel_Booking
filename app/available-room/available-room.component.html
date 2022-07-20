@@ -1,0 +1,34 @@
+<h2 class="text-success">Customer List</h2>
+<table class="table table-striped">
+<thead class="bg-success text-white">
+    <tr>
+      
+        <th>Room_Id</th>
+        <th>Room_Category</th>
+        <th>Room No</th>
+        <th>Room_Status</th>
+        <th>Total_Cost</th>
+       
+        
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let booking of availablerooms">
+        <th>{{booking.id}}</th>
+        <td>{{booking.category.categoryName}}</td>
+        <td>{{booking.number}}</td>
+        <td>{{booking.available}}</td>
+        <td>{{booking.price}}</td>
+
+       
+
+        
+
+    </tr>
+</tbody>
+
+
+
+
+
+</table>

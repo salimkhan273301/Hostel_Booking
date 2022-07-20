@@ -1,0 +1,39 @@
+<h2 class="text-success">Customer List</h2>
+<table class="table table-striped">
+<thead class="bg-success text-white">
+    <tr>
+      
+        <th>Service_Id</th>
+        <th>Service_Name</th>
+         <th>Service_Cost</th>
+         <th>Action</th>
+       
+        
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let e of feature">
+        <th>{{e.id}}</th>
+        <td>{{e.name}}</td>
+        <td>{{e.price}}</td>
+
+        <td>
+           
+            <button (click) = "deleteFeature(e.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+           
+            
+        </td>
+
+
+       
+
+        
+
+    </tr>
+</tbody>
+
+
+
+
+
+</table>

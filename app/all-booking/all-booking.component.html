@@ -1,0 +1,40 @@
+<h2 class="text-success">Customer List</h2>
+<table class="table table-striped">
+<thead class="bg-success text-white">
+    <tr>
+      
+        <th>Customer_Id</th>
+        <th>Room_Id</th>
+        <th>Room No</th>
+        <th>Room_Category</th>
+        <th>Date_From</th>
+        <th>Date_To</th>
+        <th>Total_Cost</th>
+        <th>Customer_Email</th>
+        
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let booking of allbooking">
+        <th>{{booking.id}}</th>
+        <td>{{booking.room_id.id}}</td>
+        <td>{{booking.room_id.number}}</td>
+        <td>{{booking.room_id.category.categoryName}}</td>
+        <td>{{booking.date_from}}</td>
+        <td>{{booking.date_to}}</td>
+        <td>{{booking.total_price}}</td>
+
+        <td>{{booking.employee.email}}</td>
+
+       
+
+        
+
+    </tr>
+</tbody>
+
+
+
+
+
+</table>

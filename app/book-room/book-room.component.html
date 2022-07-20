@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3 my-4">
+        <div class="row">
+            <h3 class="text-center bg-success text-white"> Book Room </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label>Room_Id</label>
+                        <input type="text" class="form-control" id="roomId" [(ngModel)]="bookroom.roomId"
+                            name="roomId">
+                    </div>
+                    <div class="form-group">
+                        <label>User_Id</label>
+                        <input type="text" class="form-control" id="userId" [(ngModel)]="bookroom.userId"
+                            name="userId">
+                    </div>
+                    <div class="form-group">
+                        <label>FeatureId</label>
+                        <input type="text" class="form-control" id="featureId" [(ngModel)]="bookroom.featureId"
+                            name="featureId">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Year</label>
+                        <input type="text" class="form-control" id="year" [(ngModel)]="bookroom.year"
+                            name="day">
+                    </div>
+                    <div class="form-group">
+                        <label>Month</label>
+                        <input type="text" class="form-control" id="month" [(ngModel)]="bookroom.month"
+                            name="day">
+                    </div>
+                    <div class="form-group">
+                        <label>Day</label>
+                        <input type="text" class="form-control" id="dayOfMonth" [(ngModel)]="bookroom.dayOfMonth"
+                            name="day">
+                    </div>
+                    
+
+                   
+                    
+              
+
+                   
+
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

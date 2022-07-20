@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-sm bg-success navbar-dark justify-content-center">
+    <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="#">Hostel Managment</a>
+    </div>
+
+
+
+    <ul class = "navbar-nav  ">
+       
+
+        <li class = "nav-item">
+            <a routerLink="home" routerLinkActive="active" class="nav-link active text-warning"  ><h6>Home</h6></a>
+        </li>
+
+        <li class = "nav-item">
+            <a routerLink="employees" routerLinkActive="active" class="nav-link" ><h6>Customer_List</h6></a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="create-employee" routerLinkActive="active" class="nav-link "  ><h6>Add_Customer</h6></a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="hostel-detail" routerLinkActive="active" class="nav-link "  ><h6>Hostel_Details</h6></a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="about" routerLinkActive="active" class="nav-link "  ><h6>About</h6></a>
+        </li>
+       
+    </ul>
+</nav>
+
+
+
+<div class="container">
+    
+    <router-outlet></router-outlet>
+</div>
+
+<footer class = "footer">
+    <div class = "container">
+        <span>All Rights Reserved 2020 @Mohd Salimullah</span>
+    </div>
+</footer>

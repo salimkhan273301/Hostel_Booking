@@ -1,0 +1,38 @@
+<h2 class="text-success">Customer List</h2>
+<table class="table table-striped">
+<thead class="bg-success text-white">
+    <tr>
+      
+        <th>Customer_Id</th>
+        <th>Customer_Name</th>
+        <th>Customer_Email_Id</th>
+        <th>Customer_Mobile_No</th>
+        <th>Password</th>
+        <th>Action</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let employee of employees">
+        <th>{{employee.id}}</th>
+        <td>{{employee.name}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.mobile}}</td>
+        <td>{{employee.password}}</td>
+
+        <td>
+            <button (click) = "updateEmployee(employee.id)" class = "btn btn-primary"> Update</button>
+            <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+            <button (click) = "employeeDetails(employee.id)" class = "btn btn-success" style="margin-left: 10px"> View</button>
+            
+        </td>
+
+        
+
+    </tr>
+</tbody>
+
+
+
+
+
+</table>
